@@ -1,0 +1,45 @@
+extends layout
+
+block content
+   
+  div.container
+
+      h1(class="title is-1") Contacto  
+
+      form(name="miformulario" action="/confirmacion" method="POST" enctype="multipart/form-data" )
+      
+          div.field
+              label.label Nombre
+              div.control.has-icons-left.has-icons-right
+                  input.input(type="text" name="username" placeholder="Nombre")
+                  span.icon.is-small.is-left
+                      i.fas.fa-user
+
+          div.field
+              label.label Email
+              div.control.has-icons-left.has-icons-right
+                  input.input(type="text" name="email" placeholder="Email")
+                  span.icon.is-small.is-left
+                      i.fas.fa-envelope
+          div.field
+                label.label Subject
+                div.control
+                    input(name="photo",type="file")
+
+          div.field
+              label.label Message
+              div.control
+                  textarea.textarea(placeholder="Mensaje" name="message") 
+
+          div.field
+              div.control
+                  label.checkbox
+                  input(type="checkbox" name="terms")
+                  a(href="/") Estoy de acuerdo con la política de privacidad
+
+          div.field.is-grouped
+              div.control
+                  button.button.is-link Submit
+              
+              div.control
+                  button.button.is-text Cancel
