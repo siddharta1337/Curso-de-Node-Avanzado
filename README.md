@@ -1,4 +1,4 @@
-# Curso-de-Node-Avanzado
+# Curso de Node Avanzado
 Curso publicado en https://www.linkedin.com/learning/instructors/carlos-solis
 
 ## Cómo usar este repositorio
